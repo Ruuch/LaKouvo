@@ -78,8 +78,9 @@ class RahinaRiku : MonoBehaviour
 
         animator.enabled = false;
         characterController.enabled = false;
+        currentState = RahinaState.Ragdoll;
 
-        GameObject.Destroy(gameObject, 4);
+        GameObject.Destroy(gameObject, 6);
 
     }
 
@@ -97,7 +98,7 @@ class RahinaRiku : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.H))
         {
             EnableRagdoll();
-            currentState = RahinaState.Ragdoll;
+
         }
     }
 
@@ -116,14 +117,11 @@ class RahinaRiku : MonoBehaviour
 
     }
 
-
-
-
-    private void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.tag == "Fist")
+        Debug.Log(collision.collider.tag);
+        if (collision.collider.tag == "Fist")
         {
-            Debug.Log("�hh");
             EnableRagdoll();
         }
     }
