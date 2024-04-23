@@ -1839,6 +1839,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6783034840545774655, guid: a5402b279cbc7eb40aa32cfdb8a2968d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Fist
+      objectReference: {fileID: 0}
+    - target: {fileID: -6696783755882259444, guid: a5402b279cbc7eb40aa32cfdb8a2968d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.913
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a5402b279cbc7eb40aa32cfdb8a2968d,
         type: 3}
       propertyPath: m_Name
@@ -5797,7 +5807,7 @@ GameObject:
   - component: {fileID: 6423416464583674819}
   m_Layer: 0
   m_Name: Skeleton
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11068,7 +11078,7 @@ GameObject:
   - component: {fileID: 6561497354695635868}
   - component: {fileID: 7467320269222883308}
   - component: {fileID: 7848244267010684251}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PlayerArmature
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -11087,7 +11097,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2.01
-  m_Radius: 0.28
+  m_Radius: 0.3308524
   m_SlopeLimit: 45
   m_StepOffset: 0.25
   m_SkinWidth: 0.02
@@ -11807,7 +11817,7 @@ GameObject:
   - component: {fileID: 3882265271508300168}
   m_Layer: 0
   m_Name: Geometry
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
